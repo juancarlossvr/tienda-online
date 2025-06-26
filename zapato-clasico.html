@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zapato Clásico - Tienda de Zapatos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Logo Tienda de Zapatos">
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#catalogo">Catálogo</a>
+        <a href="index.html#ofertas">Ofertas</a>
+        <a href="index.html#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="detalle-producto">
+      <div class="producto-info">
+        <div class="imagen-producto">
+          <img src="images/zapato1.png" alt="Zapato Clásico">
+        </div>
+        
+        <div class="info-producto">
+          <h1>Zapato Clásico</h1>
+          <p class="precio">$250.000</p>
+          <p class="descripcion">
+            Zapato clásico de cuero genuino, perfecto para ocasiones formales y uso diario. 
+            Diseño elegante y atemporal que combina con cualquier atuendo profesional.
+          </p>
+          
+          <button onclick="agregarAlCarrito()" class="btn-comprar">Agregar al carrito</button>
+          
+          <div class="enlace-externo">
+            <p><strong>Más información sobre zapatos clásicos:</strong></p>
+            <a href="https://es.wikipedia.org/wiki/Zapato" target="_blank">Historia del calzado</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tablas-info">
+        <div class="tabla-container">
+          <h3>Tabla de Tallas</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Talla</th>
+                <th>CM</th>
+                <th>Disponibilidad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>38</td>
+                <td>24.5</td>
+                <td>✅ Disponible</td>
+              </tr>
+              <tr>
+                <td>39</td>
+                <td>25.0</td>
+                <td>✅ Disponible</td>
+              </tr>
+              <tr>
+                <td>40</td>
+                <td>25.5</td>
+                <td>✅ Disponible</td>
+              </tr>
+              <tr>
+                <td>41</td>
+                <td>26.0</td>
+                <td>❌ Agotado</td>
+              </tr>
+              <tr>
+                <td>42</td>
+                <td>26.5</td>
+                <td>✅ Disponible</td>
+              </tr>
+              <tr>
+                <td>43</td>
+                <td>27.0</td>
+                <td>✅ Disponible</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tabla-container">
+          <h3>Especificaciones del Producto</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Característica</th>
+                <th>Detalle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Material</td>
+                <td>Cuero genuino</td>
+              </tr>
+              <tr>
+                <td>Color</td>
+                <td>Negro</td>
+              </tr>
+              <tr>
+                <td>Suela</td>
+                <td>Cuero con antideslizante</td>
+              </tr>
+              <tr>
+                <td>Ocasión</td>
+                <td>Formal / Trabajo</td>
+              </tr>
+              <tr>
+                <td>Garantía</td>
+                <td>6 meses</td>
+              </tr>
+              <tr>
+                <td>Origen</td>
+                <td>Brasil</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tienda de Zapatos. Todos los derechos reservados a Juan Velázquez.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

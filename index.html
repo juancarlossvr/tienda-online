@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda de Zapatos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#inicio">
+          <img src="images/logo.png" alt="Logo Tienda de Zapatos">
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="seccion">
+      <h1>Bienvenido a nuestra tienda de zapatos</h1>
+      <p>Descubrí el estilo que se adapta a vos.</p>
+      
+      <!-- Audio de bienvenida -->
+      <div class="audio-bienvenida">
+        <audio controls>
+          <source src="audios/ambiental.mp3" type="audio/mpeg">
+          Tu navegador no soporta audio HTML5.
+        </audio>
+      </div>
+      
+      <!-- Video promocional -->
+      <div class="video-promocional">
+        <video controls width="500">
+          <source src="videos/promocional-tienda.mp4" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+      </div>
+    </section>
+
+    <section id="catalogo" class="seccion">
+      <h2>Catálogo</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="images/zapato1.png" alt="Zapato clásico">
+          <h3>Zapato Clásico</h3>
+          <p>$250.000</p>
+          <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+          <a href="zapato-clasico.html" class="ver-detalle">Ver detalle</a>
+        </div>
+        <div class="producto">
+          <img src="images/zapato2.png" alt="Zapatilla deportiva">
+          <h3>Zapatilla Deportiva N200</h3>
+          <p>$300.000</p>
+          <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+          <a href="zapatilla-n200.html" class="ver-detalle">Ver detalle</a>
+        </div>
+        <div class="producto">
+          <img src="images/zapato3.png" alt="Zapatilla deportiva">
+          <h3>Zapatilla Deportiva K540</h3>
+          <p>$500.000</p>
+          <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+          <a href="zapatilla-k540.html" class="ver-detalle">Ver detalle</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ofertas" class="seccion">
+      <h2>Ofertas del Mes</h2>
+      <p>¡Aprovechá los descuentos en productos seleccionados!</p>
+      
+      <!-- Tabla de ofertas -->
+      <div class="tabla-ofertas">
+        <h3>Descuentos Especiales</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio Original</th>
+              <th>Descuento</th>
+              <th>Precio Final</th>
+              <th>Válido hasta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Zapato Clásico</td>
+              <td>$250.000</td>
+              <td>15%</td>
+              <td>$212.500</td>
+              <td>31/07/2025</td>
+            </tr>
+            <tr>
+              <td>Zapatilla N200</td>
+              <td>$300.000</td>
+              <td>20%</td>
+              <td>$240.000</td>
+              <td>15/07/2025</td>
+            </tr>
+            <tr>
+              <td>Zapatilla K540</td>
+              <td>$500.000</td>
+              <td>10%</td>
+              <td>$450.000</td>
+              <td>30/06/2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <div class="contacto-info">
+        <p>Email: contacto@zapatotienda.com</p>
+        <p>Teléfono: +595 987 448 422</p>
+        <p>Dirección: San Isidro, Encarnación, Paraguay</p>
+      </div>
+      
+      <!-- Formulario obligatorio -->
+      <div class="formulario-contacto">
+        <h3>Dejanos tu comentario</h3>
+        <form id="contactForm">
+          <div class="campo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          
+          <div class="campo">
+            <label for="curso">Como nos conociste?:</label>
+            <select id="curso" name="curso" required>
+              <option value="">Selecciona la opcion mas adecuada: </option>
+              <option value="1ro">Redes sociales</option>
+              <option value="2do">Busquedas en web</option>
+              <option value="3ro">Boca en boca</option>
+              <option value="4to">Tiendas fisicas</option>
+            </select>
+          </div>
+          
+          <div class="campo">
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+          </div>
+          
+          <button type="submit">Enviar comentario</button>
+        </form>
+      </div>
+      
+      <!-- Enlaces externos -->
+      <div class="enlaces-externos">
+        <h3>Sígueme en:</h3>
+        <a href="https://www.facebook.com/share/1HMrWsepBc/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/juancarlossvr?igsh=bnpzeGpkcG0wdnhh" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@juancarlossvr?_t=ZM-8xVuVp96iRC&_r=1" target="_blank">Tiktok</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tienda de Zapatos. Todos los derechos reservados a Juan Velázquez.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
